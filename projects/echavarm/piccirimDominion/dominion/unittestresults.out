@@ -1,0 +1,343 @@
+
+----------Start Testing Buy Card----------
+
+Testing for not enough coins
+Passed when testing 4 coins
+
+Test for enough coins
+Failed when testing 10 coins
+
+Testing for enough coins and  no buy potential
+Passed when testing 10 coins & 0 buy
+
+----------End Testing Buy Card----------
+Function 'updateCoins'
+Lines executed:81.82% of 11
+Branches executed:100.00% of 8
+Taken at least once:75.00% of 8
+No calls
+
+Function 'gainCard'
+Lines executed:0.00% of 13
+Branches executed:0.00% of 6
+Taken at least once:0.00% of 6
+Calls executed:0.00% of 1
+
+Function 'discardCard'
+Lines executed:92.31% of 13
+Branches executed:100.00% of 6
+Taken at least once:66.67% of 6
+No calls
+
+Function 'great_hall_fxn'
+Lines executed:100.00% of 5
+No branches
+Calls executed:100.00% of 2
+
+Function 'council_room_fxn'
+Lines executed:0.00% of 9
+Branches executed:0.00% of 6
+Taken at least once:0.00% of 6
+Calls executed:0.00% of 3
+
+Function 'village_fxn'
+Lines executed:0.00% of 5
+No branches
+Calls executed:0.00% of 2
+
+Function 'adventurer_fxn'
+Lines executed:0.00% of 17
+Branches executed:0.00% of 12
+Taken at least once:0.00% of 12
+Calls executed:0.00% of 2
+
+Function 'smithy_fxn'
+Lines executed:0.00% of 5
+Branches executed:0.00% of 2
+Taken at least once:0.00% of 2
+Calls executed:0.00% of 2
+
+Function 'cardEffect'
+Lines executed:4.29% of 210
+Branches executed:12.85% of 179
+Taken at least once:1.68% of 179
+Calls executed:3.45% of 58
+
+Function 'getCost'
+Lines executed:0.00% of 30
+Branches executed:0.00% of 28
+Taken at least once:0.00% of 28
+No calls
+
+Function 'drawCard'
+Lines executed:77.27% of 22
+Branches executed:100.00% of 6
+Taken at least once:66.67% of 6
+Calls executed:100.00% of 1
+
+Function 'getWinners'
+Lines executed:0.00% of 24
+Branches executed:0.00% of 22
+Taken at least once:0.00% of 22
+Calls executed:0.00% of 2
+
+Function 'scoreFor'
+Lines executed:0.00% of 24
+Branches executed:0.00% of 42
+Taken at least once:0.00% of 42
+Calls executed:0.00% of 3
+
+Function 'isGameOver'
+Lines executed:0.00% of 10
+Branches executed:0.00% of 8
+Taken at least once:0.00% of 8
+No calls
+
+Function 'endTurn'
+Lines executed:0.00% of 20
+Branches executed:0.00% of 6
+Taken at least once:0.00% of 6
+Calls executed:0.00% of 3
+
+Function 'whoseTurn'
+Lines executed:100.00% of 2
+No branches
+No calls
+
+Function 'fullDeckCount'
+Lines executed:0.00% of 9
+Branches executed:0.00% of 12
+Taken at least once:0.00% of 12
+No calls
+
+Function 'supplyCount'
+Lines executed:100.00% of 2
+No branches
+No calls
+
+Function 'handCard'
+Lines executed:0.00% of 3
+No branches
+Calls executed:0.00% of 1
+
+Function 'numHandCards'
+Lines executed:0.00% of 2
+No branches
+Calls executed:0.00% of 1
+
+Function 'buyCard'
+Lines executed:46.15% of 13
+Branches executed:66.67% of 6
+Taken at least once:50.00% of 6
+Calls executed:25.00% of 4
+
+Function 'playCard'
+Lines executed:0.00% of 14
+Branches executed:0.00% of 10
+Taken at least once:0.00% of 10
+Calls executed:0.00% of 3
+
+Function 'shuffle'
+Lines executed:100.00% of 16
+Branches executed:100.00% of 8
+Taken at least once:100.00% of 8
+Calls executed:100.00% of 2
+
+Function 'initializeGame'
+Lines executed:91.94% of 62
+Branches executed:95.65% of 46
+Taken at least once:86.96% of 46
+Calls executed:100.00% of 5
+
+Function 'kingdomCards'
+Lines executed:0.00% of 13
+No branches
+No calls
+
+Function 'newGame'
+Lines executed:0.00% of 3
+No branches
+No calls
+
+Function 'compare'
+Lines executed:83.33% of 6
+Branches executed:100.00% of 4
+Taken at least once:75.00% of 4
+No calls
+
+File 'dominion.c'
+Lines executed:24.87% of 563
+Branches executed:24.70% of 417
+Taken at least once:17.03% of 417
+Calls executed:13.68% of 95
+Creating 'dominion.c.gcov'
+
+
+----------Testing Smithy Card----------
+Failed where hand count is not correct
+Passed where Smithy card was added to the players hand
+Failed where player did not play Smithy card
+Failed where there is a variance in smithy cards
+Passed where the Smithy was discarded
+----------End Testing Smithy Card----------
+GCOV After cardtest1 
+
+----------Testing Smithy Card----------
+Failed where hand count is not correct
+Passed where Smithy card was added to the players hand
+Failed where player did not play Smithy card
+Failed where there is a variance in smithy cards
+Passed where the Smithy was discarded
+----------End Testing Smithy Card----------
+
+----------Start Testing Card Cost----------
+
+Passed where Curse returned 0.
+
+Passed where Estate returned 2.
+
+Passed where Duchy returned 5.
+
+Passed where Province returned 8.
+
+Passed where Copper returned 0.
+
+Passed where Silver returned 3.
+
+Passed where Gold returned 6.
+
+Passed where Adventure returned 6.
+
+Passed where Council_Room returned 5.
+
+Passed where Feast returned 4.
+
+Passed where Gardens returned 4.
+
+Passed where Mine returned 5.
+
+Passed where Remodel returned 4.
+
+Passed where Smithy returned 4.
+
+Passed where Village returned 3.
+
+Passed where Baron returned 4.
+
+Passed where Great_Hall returned 3.
+
+Passed where Minion returned 5.
+
+Passed where Steward returned 3.
+
+Passed where Tribute returned 5.
+
+Passed where Ambassador returned 3.
+
+Passed where Cutpurse returned 4.
+
+Passed where Embargo returned 2.
+
+Passed where Outpost returned 5.
+
+Passed where Salvager returned 4.
+
+Passed where Sea_Hag returned 4.
+
+Passed where Treasure_Map returned 4.
+
+----------End Testing Card Cost----------
+Function 'main'
+Lines executed:76.72% of 116
+Branches executed:100.00% of 110
+Taken at least once:74.55% of 110
+Calls executed:52.63% of 57
+
+File 'unittest2.c'
+Lines executed:76.72% of 116
+Branches executed:100.00% of 110
+Taken at least once:74.55% of 110
+Calls executed:52.63% of 57
+Creating 'unittest2.c.gcov'
+
+File 'unittest3.c'
+No executable lines
+No branches
+No calls
+Removing 'unittest3.c.gcov'
+
+File 'unittest3.c'
+No executable lines
+No branches
+No calls
+Removing 'unittest3.c.gcov'
+
+
+Check player 1
+Passed where player is player 1
+
+Check player 2
+Passed where player is player 2
+
+----------Start Testing Update Coins ----------
+
+Testing copper
+
+Failed where copper is 0/10
+
+Testing silver
+
+Failed where silver is 0/20
+
+Testing gold
+
+Failed where gold is 0/30
+
+Testing copper + 1 bonus
+
+Failed where copper + 1 bonus is 1/11
+
+----------Start Testing Update Coins ----------
+
+----------Start Testing Buy Card----------
+
+Testing for not enough coins
+Passed when testing 4 coins
+
+Test for enough coins
+Failed when testing 10 coins
+
+Testing for enough coins and  no buy potential
+Passed when testing 10 coins & 0 buy
+
+----------End Testing Buy Card----------
+
+----------Testing Adventurer Card----------
+Failed where deck count is not correct
+Failed where hand count is not correct
+Passed where Adventurer card was added to the players hand
+Failed where player did not play Adventurer card
+Failed where there is a variance in Adventurer cards
+Passed where the Adventurer was discarded
+Failed where two extra action was not added
+----------End Testing Adventurer Card----------
+
+----------Testing Village Card----------
+Passed where Village card was added to the players hand
+Passed where player played Village card
+Passed where the Village was discarded
+Failed where two extra actions were not added
+----------End Testing Village Card----------
+
+----------Testing Great Hall Card----------
+Passed where Great Hall card was added to the players hand
+Passed where player played Great Hall card
+Passed where the Great Hall was discarded
+Passed where an extra action was added
+----------End Testing Great Hall Card----------
+
+Check player 1
+Passed where player is player 1
+
+Check player 2
+Passed where player is player 2

@@ -1,0 +1,387 @@
+        -:    0:Source:unittest2.c
+        -:    0:Graph:unittest2.gcno
+        -:    0:Data:unittest2.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:
+        -:    2:#include "dominion.h"
+        -:    3:#include "dominion_helpers.h"
+        -:    4:#include "rngs.h"
+        -:    5:#include <string.h>
+        -:    6:#include <stdio.h>
+        -:    7:#include <math.h>
+        -:    8:#include <stdlib.h>
+        -:    9:#include <assert.h>
+        -:   10:
+function main called 1 returned 100% blocks executed 81%
+        1:   11:void main ()
+        -:   12:{
+        1:   13:	int cardNumber = 0;
+        1:   14:	int returned = 0;
+        -:   15:
+        1:   16: 	printf("\n----------Start Testing Card Cost----------\n");
+call    0 returned 100%
+        -:   17:
+       28:   18:	for(cardNumber; cardNumber < 27; cardNumber++)
+branch  0 taken 96%
+branch  1 taken 4% (fallthrough)
+        -:   19:	{
+       27:   20:		returned = getCost(cardNumber);
+call    0 returned 100%
+        -:   21:
+       27:   22:		if(cardNumber == 0)			//Curse: 0
+branch  0 taken 4% (fallthrough)
+branch  1 taken 96%
+        -:   23:		{
+        1:   24:			if (returned == 0)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        1:   25:				printf("\nPassed where Curse returned %d.\n", returned);
+call    0 returned 100%
+        -:   26:			else
+    #####:   27:				printf("\nFailed where Curse returned %d.\n", returned);
+call    0 never executed
+        -:   28:		}
+       26:   29:		else if (cardNumber == 1)	//Estate: 2
+branch  0 taken 4% (fallthrough)
+branch  1 taken 96%
+        -:   30:		{
+        1:   31:			if (returned == 2)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        1:   32:				printf("\nPassed where Estate returned %d.\n", returned);
+call    0 returned 100%
+        -:   33:			else
+    #####:   34:				printf("\nFailed where Estate returned %d.\n", returned);
+call    0 never executed
+        -:   35:		}
+       25:   36:		else if (cardNumber == 2)	//Duchy: 5
+branch  0 taken 4% (fallthrough)
+branch  1 taken 96%
+        -:   37:		{
+        1:   38:			if (returned == 5)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        1:   39:				printf("\nPassed where Duchy returned %d.\n", returned);
+call    0 returned 100%
+        -:   40:			else
+    #####:   41:				printf("\nFailed where Duchy returned %d.\n", returned);
+call    0 never executed
+        -:   42:		}
+       24:   43:		else if (cardNumber == 3)	//Province: 8
+branch  0 taken 4% (fallthrough)
+branch  1 taken 96%
+        -:   44:		{
+        1:   45:			if (returned == 8)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        1:   46:				printf("\nPassed where Province returned %d.\n", returned);
+call    0 returned 100%
+        -:   47:			else
+    #####:   48:				printf("\nFailed where Province returned %d.\n", returned);
+call    0 never executed
+        -:   49:		}
+       23:   50:		else if (cardNumber == 4)	//Copper: 0
+branch  0 taken 4% (fallthrough)
+branch  1 taken 96%
+        -:   51:		{
+        1:   52:			if (returned == 0)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        1:   53:				printf("\nPassed where Copper returned %d.\n", returned);
+call    0 returned 100%
+        -:   54:			else
+    #####:   55:				printf("\nFailed where Copper returned %d.\n", returned);
+call    0 never executed
+        -:   56:		}
+       22:   57:		else if (cardNumber == 5)	//Silver: 3
+branch  0 taken 5% (fallthrough)
+branch  1 taken 95%
+        -:   58:		{
+        1:   59:			if (returned == 3)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        1:   60:				printf("\nPassed where Silver returned %d.\n", returned);
+call    0 returned 100%
+        -:   61:			else
+    #####:   62:				printf("\nFailed where Silver returned %d.\n", returned);
+call    0 never executed
+        -:   63:		}
+       21:   64:		else if (cardNumber == 6)	//Gold: 6
+branch  0 taken 5% (fallthrough)
+branch  1 taken 95%
+        -:   65:		{
+        1:   66:			if (returned == 6)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        1:   67:				printf("\nPassed where Gold returned %d.\n", returned);
+call    0 returned 100%
+        -:   68:			else
+    #####:   69:				printf("\nFailed where Gold returned %d.\n", returned);
+call    0 never executed
+        -:   70:		}
+       20:   71:		else if (cardNumber == 7)	//Adventure: 6
+branch  0 taken 5% (fallthrough)
+branch  1 taken 95%
+        -:   72:		{
+        1:   73:			if (returned == 6)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        1:   74:				printf("\nPassed where Adventure returned %d.\n", returned);
+call    0 returned 100%
+        -:   75:			else
+    #####:   76:				printf("\nFailed where Adventure returned %d.\n", returned);
+call    0 never executed
+        -:   77:		}
+       19:   78:		else if (cardNumber == 8)	//Council_Room: 5
+branch  0 taken 5% (fallthrough)
+branch  1 taken 95%
+        -:   79:		{
+        1:   80:			if (returned == 5)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        1:   81:				printf("\nPassed where Council_Room returned %d.\n", returned);
+call    0 returned 100%
+        -:   82:			else
+    #####:   83:				printf("\nFailed where Council_Room returned %d.\n", returned);
+call    0 never executed
+        -:   84:		}
+       18:   85:		else if (cardNumber == 9)	//Feast: 4
+branch  0 taken 6% (fallthrough)
+branch  1 taken 94%
+        -:   86:		{
+        1:   87:			if (returned == 4)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        1:   88:				printf("\nPassed where Feast returned %d.\n", returned);
+call    0 returned 100%
+        -:   89:			else
+    #####:   90:				printf("\nFailed where Feast returned %d.\n", returned);
+call    0 never executed
+        -:   91:		}
+       17:   92:		else if (cardNumber == 10)	//Gardens: 4
+branch  0 taken 6% (fallthrough)
+branch  1 taken 94%
+        -:   93:		{
+        1:   94:			if (returned == 4)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        1:   95:				printf("\nPassed where Gardens returned %d.\n", returned);
+call    0 returned 100%
+        -:   96:			else
+    #####:   97:				printf("\nFailed where Gardens returned %d.\n", returned);
+call    0 never executed
+        -:   98:		}
+       16:   99:		else if (cardNumber == 11)	//Mine: 5
+branch  0 taken 6% (fallthrough)
+branch  1 taken 94%
+        -:  100:		{
+        1:  101:			if (returned == 5)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        1:  102:				printf("\nPassed where Mine returned %d.\n", returned);
+call    0 returned 100%
+        -:  103:			else
+    #####:  104:				printf("\nFailed where Mine returned %d.\n", returned);
+call    0 never executed
+        -:  105:		}
+       15:  106:		else if (cardNumber == 12)	//Remodel: 4
+branch  0 taken 7% (fallthrough)
+branch  1 taken 93%
+        -:  107:		{
+        1:  108:			if (returned == 4)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        1:  109:				printf("\nPassed where Remodel returned %d.\n", returned);
+call    0 returned 100%
+        -:  110:			else
+    #####:  111:				printf("\nFailed where Remodel returned %d.\n", returned);
+call    0 never executed
+        -:  112:		}
+       14:  113:		else if (cardNumber == 13)	//Smithy: 4
+branch  0 taken 7% (fallthrough)
+branch  1 taken 93%
+        -:  114:		{
+        1:  115:			if (returned == 4)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        1:  116:				printf("\nPassed where Smithy returned %d.\n", returned);
+call    0 returned 100%
+        -:  117:			else
+    #####:  118:				printf("\nFailed where Smithy returned %d.\n", returned);
+call    0 never executed
+        -:  119:		}
+       13:  120:		else if (cardNumber == 14)	//Village: 3
+branch  0 taken 8% (fallthrough)
+branch  1 taken 92%
+        -:  121:		{
+        1:  122:			if (returned == 3)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        1:  123:				printf("\nPassed where Village returned %d.\n", returned);
+call    0 returned 100%
+        -:  124:			else
+    #####:  125:				printf("\nFailed where Village returned %d.\n", returned);
+call    0 never executed
+        -:  126:		}
+       12:  127:		else if (cardNumber == 15)	//Baron: 4
+branch  0 taken 8% (fallthrough)
+branch  1 taken 92%
+        -:  128:		{
+        1:  129:			if (returned == 4)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        1:  130:				printf("\nPassed where Baron returned %d.\n", returned);
+call    0 returned 100%
+        -:  131:			else
+    #####:  132:				printf("\nFailed where Baron returned %d.\n", returned);
+call    0 never executed
+        -:  133:		}
+       11:  134:		else if (cardNumber == 16)	//Great_Hall: 3
+branch  0 taken 9% (fallthrough)
+branch  1 taken 91%
+        -:  135:		{
+        1:  136:			if (returned == 3)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        1:  137:				printf("\nPassed where Great_Hall returned %d.\n", returned);
+call    0 returned 100%
+        -:  138:			else
+    #####:  139:				printf("\nFailed where Great_Hall returned %d.\n", returned);
+call    0 never executed
+        -:  140:		}
+       10:  141:		else if (cardNumber == 17)	//Minion: 5
+branch  0 taken 10% (fallthrough)
+branch  1 taken 90%
+        -:  142:		{
+        1:  143:			if (returned == 5)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        1:  144:				printf("\nPassed where Minion returned %d.\n", returned);
+call    0 returned 100%
+        -:  145:			else
+    #####:  146:				printf("\nFailed where Minion returned %d.\n", returned);
+call    0 never executed
+        -:  147:		}
+        9:  148:		else if (cardNumber == 18)	//Steward: 3
+branch  0 taken 11% (fallthrough)
+branch  1 taken 89%
+        -:  149:		{
+        1:  150:			if (returned == 3)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        1:  151:				printf("\nPassed where Steward returned %d.\n", returned);
+call    0 returned 100%
+        -:  152:			else
+    #####:  153:				printf("\nFailed where Steward returned %d.\n", returned);
+call    0 never executed
+        -:  154:		}
+        8:  155:		else if (cardNumber == 19)	//Tribute: 5
+branch  0 taken 13% (fallthrough)
+branch  1 taken 88%
+        -:  156:		{
+        1:  157:			if (returned == 5)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        1:  158:				printf("\nPassed where Tribute returned %d.\n", returned);
+call    0 returned 100%
+        -:  159:			else
+    #####:  160:				printf("\nFailed where Tribute returned %d.\n", returned);
+call    0 never executed
+        -:  161:		}
+        7:  162:		else if (cardNumber == 20)	//Ambassador: 3
+branch  0 taken 14% (fallthrough)
+branch  1 taken 86%
+        -:  163:		{
+        1:  164:			if (returned == 3)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        1:  165:				printf("\nPassed where Ambassador returned %d.\n", returned);
+call    0 returned 100%
+        -:  166:			else
+    #####:  167:				printf("\nFailed where Ambassador returned %d.\n", returned);
+call    0 never executed
+        -:  168:		}
+        6:  169:		else if (cardNumber == 21)	//Cutpurse: 4
+branch  0 taken 17% (fallthrough)
+branch  1 taken 83%
+        -:  170:		{
+        1:  171:			if (returned == 4)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        1:  172:				printf("\nPassed where Cutpurse returned %d.\n", returned);
+call    0 returned 100%
+        -:  173:			else
+    #####:  174:				printf("\nFailed where Cutpurse returned %d.\n", returned);
+call    0 never executed
+        -:  175:		}
+        5:  176:		else if (cardNumber == 22)	//Embargo: 2
+branch  0 taken 20% (fallthrough)
+branch  1 taken 80%
+        -:  177:		{
+        1:  178:			if (returned == 2)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        1:  179:				printf("\nPassed where Embargo returned %d.\n", returned);
+call    0 returned 100%
+        -:  180:			else
+    #####:  181:				printf("\nFailed where Embargo returned %d.\n", returned);
+call    0 never executed
+        -:  182:		}
+        4:  183:		else if (cardNumber == 23)	//Outpost: 5
+branch  0 taken 25% (fallthrough)
+branch  1 taken 75%
+        -:  184:		{
+        1:  185:			if (returned == 5)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        1:  186:				printf("\nPassed where Outpost returned %d.\n", returned);
+call    0 returned 100%
+        -:  187:			else
+    #####:  188:				printf("\nFailed where Outpost returned %d.\n", returned);
+call    0 never executed
+        -:  189:		}
+        3:  190:		else if (cardNumber == 24)	//Salvager: 4
+branch  0 taken 33% (fallthrough)
+branch  1 taken 67%
+        -:  191:		{
+        1:  192:			if (returned == 4)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        1:  193:				printf("\nPassed where Salvager returned %d.\n", returned);
+call    0 returned 100%
+        -:  194:			else
+    #####:  195:				printf("\nFailed where Salvager returned %d.\n", returned);
+call    0 never executed
+        -:  196:		}
+        2:  197:		else if (cardNumber == 25)	//Sea_Hag: 4
+branch  0 taken 50% (fallthrough)
+branch  1 taken 50%
+        -:  198:		{
+        1:  199:			if (returned == 4)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        1:  200:				printf("\nPassed where Sea_Hag returned %d.\n", returned);
+call    0 returned 100%
+        -:  201:			else
+    #####:  202:				printf("\nFailed where Sea_Hag returned %d.\n", returned);
+call    0 never executed
+        -:  203:		}
+        1:  204:		else if (cardNumber == 26)	//Treasure_Map: 4
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        -:  205:		{
+        1:  206:			if (returned == 4)
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        1:  207:				printf("\nPassed where Treasure_Map returned %d.\n", returned);
+call    0 returned 100%
+        -:  208:			else
+    #####:  209:				printf("\nFailed where Treasure_Map returned %d.\n", returned);
+call    0 never executed
+        -:  210:		}
+        -:  211:	}
+        -:  212:
+        1:  213:	 printf("\n----------End Testing Card Cost----------\n");
+call    0 returned 100%
+        1:  214:}
